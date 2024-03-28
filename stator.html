@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Stator</title>
+</head>
+
+<body onload="main()">
+  <script src="scripts/stator.js"></script>
+
+  <header class="header">
+    <div class="headerbox">
+      <a href="index.html">
+        <h1 class="title">Satisfactory Calculator</h1>
+      </a>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="mainbox">
+
+      <div>
+        <h2 class="subtitle">
+          Stator
+        </h2>
+        <img class="partimage" src="images/Stator.webp" alt="">
+        
+        <form action="search">
+          <input class="inputbox" type="text" id="input" placeholder="Enter x/min" maxlength="5" size="10">
+          <input class="inputbutton" type="button" id="inputbutton" value="Calculate">
+          <input class="resetbutton" type="reset" id="resetbutton" value="Reset">
+        </form>
+        
+        <!--Row 1-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/SteelPipe.webp" alt="">
+              <img class="inputimage" src="images/CopperWire.webp" alt="">
+            </figure>
+          </div>
+          
+          <div class="outputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="steelpipeoutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="copperwireoutput">/min</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Row 2-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/SteelIngot.webp" alt="">
+              <img class="inputimage" src="images/CopperIngot.webp" alt="">
+            </figure>
+          </div>
+
+          <div class="outputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="steelingotoutput">/min</p>
+            </div>
+
+            <div class="outputresultbox">
+              <p class="outputwords" id="copperingotoutput">/min</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Row 3-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/Coal.webp" alt="">
+              <div class="inputimage"></div>
+            </figure>
+          </div>
+
+          <div class="leftoutputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="coaloreoutput">/min</p>
+            </div>
+            <div></div>
+          </div>  
+        </div>
+        
+        <!--Row 4-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/IronOre.webp" alt="">
+              <div class="inputimage"></div>
+            </figure>
+          </div>
+
+          <div class="leftoutputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="ironoreoutput">/min</p>
+            </div>
+            <div></div>
+          </div>  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Battery</title>
+</head>
+
+<body onload="main()">
+  <script src="scripts/battery.js"></script>
+
+  <header class="header">
+    <div class="headerbox">
+      <a href="index.html">
+        <h1 class="title">Satisfactory Calculator</h1>
+      </a>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="mainbox">
+
+      <div>
+        <h2 class="subtitle">
+          Battery
+        </h2>
+        <img class="partimage" src="images/Battery.webp" alt="">
+
+        <form action="search">
+          <input class="inputbox" type="text" id="input" placeholder="Enter x/min" maxlength="5" size="10">
+          <input class="inputbutton" type="button" id="inputbutton" value="Calculate">
+          <input class="resetbutton" type="reset" id="resetbutton" value="Reset">
+        </form>
+
+        <!--Row 1-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/Sulfuric Acid.webp" alt="">
+              <img class="inputimage" src="images/Aluminum Casing.webp" alt="">
+              <img class="inputimage" src="images/Alumina Solution.webp" alt="">
+            </figure>
+          </div>
+  
+          <div class="outputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="sulfuricacidoutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="aluminumcasingoutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="alumsolutionoutput">/min</p>
+            </div>
+          </div>
+        </div>
+        
+        <!--Row 2-->
+        <div>
+          <div>
+            <figure class="inputimageflex">
+              <img class="inputimage" src="images/Sulfur.webp" alt="">
+              <img class="inputimage" src="images/Water.webp" alt="">
+              <img class="inputimage" src="images/Aluminum Ingot.webp" alt="">
+              <img class="inputimage" src="images/Water.webp" alt="">
+              <img class="inputimage" src="images/Bauxite.webp" alt="">
+            </figure>
+          </div>
+          
+          <div class="outputboxflex">
+            <div class="outputresultbox">
+              <p class="outputwords" id="sulfuroutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="wateroutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="aluminumingotoutput">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="wateroutput2">/min</p>
+            </div>
+            <div class="outputresultbox">
+              <p class="outputwords" id="bauxiteoutput">/min</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
